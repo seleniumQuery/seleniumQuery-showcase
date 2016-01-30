@@ -1,6 +1,6 @@
 package other;
 
-import static io.github.seleniumquery.SeleniumQuery.$;
+import static io.github.seleniumquery.SeleniumQuery.$; // this will allow the short syntax
 
 public class SeleniumQueryExample {
   public static void main(String[] args) {
