@@ -19,7 +19,7 @@
 		<dependency>
 			<groupId>io.github.seleniumquery</groupId>
 			<artifactId>seleniumquery</artifactId>
-			<version>0.10.0</version>
+			<version>0.11.0</version>
 		</dependency>
 	</dependencies>
 
@@ -28,7 +28,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.3</version>
+				<version>3.5</version>
 				<configuration>
 					<source>${jdk.version}</source>
 					<target>${jdk.version}</target>
