@@ -13,8 +13,10 @@ public class SeleniumQueryExample {
         // or use ("decorate") any previously existing driver
         $.driver().use(new FirefoxDriver());
 
+        // starts the driver (if not started already) and opens the URL
         $.url("http://www.google.com/?hl=en");
 
+        // interact with the page
         $(":text[name='q']").val("selenium"); // the keys are actually typed!
         $(":button[name=btnG]").click(); // simulates a real user click (not just the JS event)
 
