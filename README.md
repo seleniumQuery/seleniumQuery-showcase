@@ -1,4 +1,4 @@
-# [seleniumQuery](https://github.com/seleniumQuery/seleniumQuery) showcase demo project.
+# [seleniumQuery](https://github.com/seleniumQuery/seleniumQuery) showcase demo project
 
 #### What:
 
@@ -15,3 +15,10 @@ Check out the [`SeleniumQueryPluginExample`](https://github.com/acdcjunior/selen
 ## Using multiple Drivers at the same time
 
 The [`MultipleBrowsersExample`](https://github.com/acdcjunior/seleniumQuery-showcase/blob/master/src/main/java/browser/MultipleBrowsersExample.java) will get you started.
+
+<br><br>
+
+# More?
+
+Feel free to [**request** now](https://github.com/acdcjunior/seleniumQuery-showcase/issues) or explore [seleniumQuery's end to end tests](https://github.com/seleniumQuery/seleniumQuery/tree/master/src/test/java/endtoend).
+They are full blown examples to pretty much every functionality the lib has.
