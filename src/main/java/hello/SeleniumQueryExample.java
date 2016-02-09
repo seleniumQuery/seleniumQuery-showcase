@@ -2,7 +2,7 @@ package hello;
 
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-import static io.github.seleniumquery.SeleniumQuery.$;
+import static io.github.seleniumquery.SeleniumQuery.$; // this will allow the short $() syntax
 
 public class SeleniumQueryExample {
 
