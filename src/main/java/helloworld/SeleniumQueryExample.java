@@ -1,4 +1,4 @@
-package hello;
+package helloworld;
 
 import org.openqa.selenium.firefox.FirefoxDriver;
 
