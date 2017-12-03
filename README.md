@@ -4,6 +4,14 @@
 
 Multiple classes showing seleniumQuery's basic functionality.
 
+To get the latest version of seleniumQuery, add to your `pom.xml`:
+
+    <dependency>
+        <groupId>io.github.seleniumquery</groupId>
+        <artifactId>seleniumquery</artifactId>
+        <version>0.17.0</version>
+    </dependency>
+
 ## Hello world
 
 Simply download and run the [`main()` method of the `SeleniumQueryExample` class](https://github.com/seleniumQuery/seleniumQuery-showcase/blob/master/src/main/java/helloworld/SeleniumQueryExample.java#L9).
