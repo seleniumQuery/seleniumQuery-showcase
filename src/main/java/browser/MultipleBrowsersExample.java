@@ -23,7 +23,7 @@ import java.io.IOException;
 
 public class MultipleBrowsersExample {
 
-    private static final File DEMO_PAGE_FILE = new File("src/main/resources/DemoPage.html");
+    private static final File DEMO_PAGE_FILE = new File("src/main/resources/Agent.html");
 
     public static void main(String[] args) {
         SeleniumQueryBrowser chrome = new SeleniumQueryBrowser();
