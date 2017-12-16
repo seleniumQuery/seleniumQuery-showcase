@@ -23,25 +23,20 @@ import java.io.IOException;
 
 public class MultipleBrowsersExample {
 
-    private static final File DEMO_PAGE_FILE = new File("src/main/resources/Agent.html");
-
     public static void main(String[] args) {
+        String demoPage = "https://cdn.rawgit.com/seleniumQuery/seleniumQuery-showcase/master/Agent.html";
+
+        // using two drivers (chrome and firefox) at the same time
         SeleniumQueryBrowser chrome = new SeleniumQueryBrowser();
-        chrome.$.driver().useHtmlUnit().emulatingChrome();
-        chrome.$.url(DEMO_PAGE_FILE);
+        chrome.$.driver().useHtmlUnit().emulatingChrome().autoQuitDriver();
+        chrome.$.url(demoPage);
 
         SeleniumQueryBrowser firefox = new SeleniumQueryBrowser();
-        firefox.$.driver().useHtmlUnit().emulatingFirefox();
-        firefox.$.url(DEMO_PAGE_FILE);
+        firefox.$.driver().useHtmlUnit().emulatingFirefox().autoQuitDriver();
+        firefox.$.url(demoPage);
 
-        System.out.println("Chrome's page title: "+chrome.$.driver().get().getTitle());
-        System.out.println("Firefox's page title: "+firefox.$.driver().get().getTitle());
-
-        System.out.println("Chrome's agent: "+chrome.$("#agent").text());
-        System.out.println("Firefox's agent: "+firefox.$("#agent").text());
-
-        chrome.$.quit();
-        firefox.$.quit();
+        chrome.$("#agent").assertThat().text().contains("Chrome");
+        firefox.$("#agent").assertThat().text().contains("Firefox");
     }
 
 }
