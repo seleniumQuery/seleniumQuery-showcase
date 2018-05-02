@@ -27,7 +27,7 @@ public class SeleniumQueryPluginExample {
 
         int theSize = $("div.container").as(SizerPlugin.SIZER).gimmeTheSize();
 
-        System.out.println("The size: "+ theSize);
+        System.out.println("The size: " + theSize);
     }
 
 }

@@ -37,6 +37,8 @@ public class MultipleBrowsersExample {
 
         chrome.$("#agent").assertThat().text().contains("Chrome");
         firefox.$("#agent").assertThat().text().contains("Firefox");
+
+        System.out.println("All good!");
     }
 
 }

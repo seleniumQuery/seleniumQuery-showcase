@@ -50,8 +50,8 @@ public class SeleniumQueryExample {
         // .assertThat() functions: fluently asserts that the text contains the string "seconds", ignoring case
         $("#resultStats").assertThat().text().containsIgnoreCase("seconds");
 
-        System.out.println(resultsText);
-        // should print something like: About 4,100 results (0.42 seconds)
+        System.out.println("Results: " + resultsText);
+        // should print something like: About 12,400 results (0.19 seconds)
 
         // $.quit(); // would quit the driver, but it is not needed as .autoQuitDriver() was used
     }
